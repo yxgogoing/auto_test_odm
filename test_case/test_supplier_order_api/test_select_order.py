@@ -1,4 +1,4 @@
-from supplier_service.order_service.api.service.login_api import Login
+from supplier_service.order_service.api.login_service.login_api import Login
 from common.log.Logger import log
 import parameterized
 from common.TestHome import case_model

@@ -1,4 +1,4 @@
-from supplier_service.order_service.api.service import sp_login_api  as TemplateController
+from supplier_service.order_service.api.login_service import sp_login_api  as TemplateController
 
 
 class Login(TemplateController):
@@ -14,3 +14,5 @@ class Login(TemplateController):
 
     def check(self):
         pass
+
+
