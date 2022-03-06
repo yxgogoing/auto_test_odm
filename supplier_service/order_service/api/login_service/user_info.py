@@ -1,3 +1,5 @@
+
+
 class UserInfo(object):
     def __init__(self, mobile, password):
         self.mobile = mobile

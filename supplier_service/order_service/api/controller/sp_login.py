@@ -5,7 +5,7 @@ class spLogin(BaseManagerService):
     def __init__(self,**kwargs):
         super(spLogin, self).__init__()
         self.info = '登录sp，返回sid给工厂端调用'
-        self.uri = '/sp-api/admin/v1/auth/login'
+        self.uri = '/v1/auth/login'
         self.method = 'post'
         self.body = self.Body(**kwargs)
         self.resp = self.Resp
