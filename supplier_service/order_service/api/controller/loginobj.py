@@ -1,5 +1,5 @@
 from common.objects import BaseObj
-
+from supplier_service.order_service.api.BaseMagageService2 import BaseManagerService2
 
 # from sp_login import spLogin
 
