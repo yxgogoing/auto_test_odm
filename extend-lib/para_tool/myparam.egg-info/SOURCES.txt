@@ -1,0 +1,8 @@
+setup.py
+myparam.egg-info/PKG-INFO
+myparam.egg-info/SOURCES.txt
+myparam.egg-info/dependency_links.txt
+myparam.egg-info/top_level.txt
+parameterized/__init__.py
+parameterized/parameterized.py
+parameterized/test.py
