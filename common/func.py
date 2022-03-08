@@ -111,9 +111,9 @@ def show_obj_as_excel(name, objs, ex=[]):
 # 取消注释可测试show_obj_like_excel()上面的方法
 # class Test():
 #     def __init__(self):
-#         self.name = 'yinyuting'
+#         self.name = 'yx'
 #         self.age = '20'
-#         self.alisa = 'claire'
+#         self.alisa = 'yx'
 #
 # if __name__ == "__main__":
 #     objs = [Test(), Test()]

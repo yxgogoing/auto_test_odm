@@ -1,5 +1,5 @@
 from parameterized import parameterized, param
-from supplier_service.order_service.api.login_service.login_api import LoginObj
+from supplier_service.order_service.api.controller.select_orderdetail import selectorderdetail
 from common.log.Logger import log
 from common.TestHome import case_model
 
@@ -12,5 +12,5 @@ from common.TestHome import case_model
 @case_model()
 def test_login(req_data={}, msg=None, code=200):
     log.step(msg)
-    api_obj = LoginObj(status=code, **req_data)
+    api_obj = selectorderdetail(status=code, **req_data)
     return api_obj

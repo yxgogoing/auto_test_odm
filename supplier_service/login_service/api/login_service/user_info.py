@@ -4,8 +4,6 @@ class UserInfo(object):
     def __init__(self, mobile, password):
         self.mobile = mobile
         self.password = password
-        # self.guid = None
-        # self.zuulToken = None
 
     def login(self):
         # 调用sp_login_api
