@@ -1,0 +1,10 @@
+from supplier_service.login_service.api.login_service.user_info import user
+
+def get_auth():
+    from supplier_service.login_service.api.login_service.login_api import Login
+    login_api_obj = Login().send_request()
+    return_data = login_api_obj.resp.data
+    return return_data.tokenHead + ' ' + return_data.token
+
+auth_token = get_auth()  #避免重复调用
+# print(auth_token)

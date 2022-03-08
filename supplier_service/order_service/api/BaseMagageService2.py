@@ -10,4 +10,4 @@ class BaseManagerService2(RequestUtil):
 
     # def set_token(self):
     #     from supplier_service.order_service import auth_token
-    #
+    #     self.update_headers(dict(Authorization=auth_token))
