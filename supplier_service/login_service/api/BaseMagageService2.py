@@ -8,6 +8,8 @@ class BaseManagerService2(RequestUtil):
         super(BaseManagerService2, self).__init__()
         self.host = get_host('odm_host')
 
-    def set_token(self):
-        from supplier_service.login_service import auth_token
-        self.update_headers(dict(Authorization=auth_token))
+    def set_user(self, user=None):
+        from supplier_service.login_service.api.login_service.user_info import user as default_user
+        user = user if user else default_user
+        self.update_headers(dict(Authorization=user))
+

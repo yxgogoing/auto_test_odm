@@ -5,12 +5,12 @@ from common.TestHome import case_model
 
 
 @parameterized([
-    param(dict(amount=-1), msg="验证该接口amount=-1时报xxx错", code=10005),
-    param(dict(amount=None), msg="验证该接口amount=None时报错", code=10005),
+    param(dict(amount=-1), msg="验证该接口查询不存在的订单号", code=10005),
+    param(dict(amount=None), msg="多个订单查询", code=10005),
     param(dict(amount="abc"), msg="验证该接口amount=\"abc\"时报错", code=10005)
 ])
 @case_model()
-def test_login(req_data={}, msg=None, code=200):
+def test_select_order(req_data={}, msg=None, code=200):
     log.step(msg)
     api_obj = selectorderdetail(status=code, **req_data)
     return api_obj
