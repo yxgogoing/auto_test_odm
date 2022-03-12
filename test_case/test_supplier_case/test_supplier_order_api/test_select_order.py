@@ -5,9 +5,11 @@ from common.TestHome import case_model
 
 
 @parameterized([
-    param(dict(amount=-1), msg="验证该接口查询不存在的订单号", code=10005),
-    param(dict(amount=None), msg="多个订单查询", code=10005),
-    param(dict(amount="abc"), msg="验证该接口amount=\"abc\"时报错", code=10005)
+    param(dict(tabEnName='SUPPLIER_WAIT_TAKE'), msg="查询待接单订单", code=0),
+    param(dict(tabEnName='SUPPLIER_TAKEN'), msg="查询已接单订单", code=0),
+    param(dict(tabEnName='SUPPLIER_EXCEPTION'), msg="查询异常订单", code=0),
+    param(dict(tabEnName='SUPPLIER_CANCELED'), msg="查询已取消订单", code=0),
+    param(dict(tabEnName='SUPPLIER_ALL'), msg="查询全部订单", code=0),
 ])
 @case_model()
 def test_select_order(req_data={}, msg=None, code=200):

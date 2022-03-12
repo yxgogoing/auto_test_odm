@@ -11,5 +11,5 @@ class BaseManagerService2(RequestUtil):
     def set_user(self, user=None):
         from supplier_service.login_service.api.login_service.user_info import user as default_user
         user = user if user else default_user
-        self.update_headers(dict(Authorization=user.xxx))
+        self.update_headers(dict(Authorization=user.data.accessToken))
 
