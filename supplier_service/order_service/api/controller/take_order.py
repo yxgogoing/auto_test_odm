@@ -5,7 +5,7 @@ class Takeorder(BaseManagerService2):
     def __init__(self,**kwargs):
         super(Takeorder,self).__init__()
         self.method = 'post'
-        self.uri = 'purchase-order/takeOrder'
+        self.uri = '/v1/purchase-order/takeOrder'
         self.info = '接单'
         self.body = self.Body(**kwargs)
         self.resp = self.Resp()
