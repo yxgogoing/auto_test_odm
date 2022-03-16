@@ -7,9 +7,9 @@
 #     return return_data.tokenHead + ' ' + return_data.token
 
 
-# from supplier_service.login_service.api.login_service.user_info import user
-from supplier_service.login_service.api.login_service.user_info import UserInfo
-user = UserInfo(mobile='13430212979', password='chaowen666').login()
+# # from supplier_service.login_service.api.login_service.user_info import user
+# from supplier_service.login_service.api.login_service.user_info import UserInfo
+# user = UserInfo(mobile='13430212979', password='chaowen666').login()
 
 
 
