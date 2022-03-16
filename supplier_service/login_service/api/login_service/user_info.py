@@ -15,6 +15,8 @@ class UserInfo(object):
         # 调用login_api
         from supplier_service.login_service.api.login_service.login_api import Login
         login_api = Login(sid=sid).send_request()
+        self.token = login_api.resp.data.accessToken
+        return self
 
 
 user = UserInfo(mobile='13430212979', password='chaowen666').login()
